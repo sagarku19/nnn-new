@@ -99,7 +99,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center">
+      <section className="relative min-h-[85vh] flex items-start pt-24 md:pt-32">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-indigo-900/50 to-gray-900/70 z-10"></div>
           <Image
@@ -113,43 +113,43 @@ export default function Home() {
         
         <div className="container-custom relative z-20">
           <div className="text-center max-w-4xl mx-auto text-white">
-            <div className="relative z-10 max-w-4xl mx-auto">
-              <div className="mb-4">
-                <div className="h-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent mb-6"></div>
-                <h1 className="text-6xl md:text-7xl font-lora font-bold relative">
+            <div className="relative z-10 max-w-4xl mx-auto space-y-5">
+              <div className="mb-3">
+                <div className="h-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent mb-4"></div>
+                <h1 className="text-5xl md:text-7xl font-lora font-bold relative">
                   <span className="inline-block bg-gradient-to-r from-indigo-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent transition-transform duration-300 hover:scale-105">
                     NeatnNext
                   </span>
                 </h1>
-                <div className="h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent mt-6"></div>
+                <div className="h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent mt-4"></div>
               </div>
 
-              <p className="text-2xl md:text-3xl text-gray-300 font-lora mb-12 transition-colors duration-300 hover:text-indigo-300">
+              <p className="text-xl md:text-3xl text-gray-300 font-lora mb-4 transition-colors duration-300 hover:text-indigo-300">
                 A Laundry Marketplace
               </p>
 
-              <div className="mb-8">
+              <div className="mb-4">
                 <div className="text-white text-2xl animate-bounce">
                   ↓
                 </div>
               </div>
 
-              <div className="inline-block mb-8">
+              <div className="inline-block mb-4">
                 <a
                   href="https://wa.me/917972303745?text=Hi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-10 py-5 rounded-full font-lora font-medium transition-all duration-300 shadow-lg hover:shadow-indigo-500/25 hover:scale-105"
+                  className="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-4 md:px-10 md:py-5 rounded-full font-lora font-medium transition-all duration-300 shadow-lg hover:shadow-indigo-500/25 hover:scale-105"
                 >
-                  <span className="text-3xl mr-3 transition-transform duration-300 hover:rotate-12">
+                  <span className="text-2xl md:text-3xl mr-2 md:mr-3 transition-transform duration-300 hover:rotate-12">
                     📱
                   </span>
-                  <span className="text-lg">Order Now on WhatsApp</span>
+                  <span className="text-base md:text-lg">Order Now on WhatsApp</span>
                 </a>
               </div>
 
-              <p className="text-xl md:text-2xl font-lora text-gray-200 transition-colors duration-300 hover:text-indigo-300">
-                Premium laundry service at your doorstep
+              <p className="text-lg md:text-2xl font-lora text-gray-200 transition-colors duration-300 hover:text-indigo-300">
+                India's First Large-Scale Laundry Marketplace & Aggregator
               </p>
             </div>
           </div>

@@ -137,7 +137,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Last Updated: May 1, 2024
+            Last Updated: April 1, 2025
           </p>
           <p className="text-gray-300 max-w-2xl mx-auto mt-4">
             At NeatnNext, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our services.

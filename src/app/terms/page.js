@@ -162,8 +162,8 @@ export default function TermsAndConditions() {
             >
               <div className="border-t border-gray-700 pt-6">
                 <p className="text-gray-300 italic text-center">
-                  These terms and conditions are effective from April 1, 2023, and are subject to change without prior notice. 
-                  Please check regularly for updates. Last updated: April 5, 2023.
+                  These terms and conditions are effective from April 1, 2025, and are subject to change without prior notice. 
+                  Please check regularly for updates. Last updated: April 1, 2025.
                 </p>
               </div>
             </motion.section>

@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 export default function About() {
   const stats = [
-    { id: 'years', value: '5+', label: 'Years Experience' },
-    { id: 'customers', value: '10K+', label: 'Happy Customers' },
+    { id: 'years', value: '1+', label: 'Years Experience' },
+    { id: 'customers', value: '1000+', label: 'Happy Customers' },
     { id: 'satisfaction', value: '99%', label: 'Satisfaction Rate' },
   ]
 
@@ -305,7 +305,7 @@ export default function About() {
             We're committed to providing you with the highest quality service, every time.
           </p>
           <a 
-            href="https://wa.me/1234567890" 
+            href="https://wa.me/917972303745" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all duration-300"

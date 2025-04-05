@@ -3,6 +3,7 @@ import { Inter, Lora } from 'next/font/google'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import JsonLd from './components/JsonLd'
+import { Analytics } from '@vercel/analytics/react'
 import { Suspense } from 'react'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -81,13 +82,31 @@ export default function RootLayout({ children }) {
         <JsonLd />
       </head>
       <body className={`${inter.className} bg-gray-50`}>
-        <Suspense fallback={null}>
-          <Navigation />
-        </Suspense>
-        <main className="min-h-screen">{children}</main>
-        <Suspense fallback={null}>
-          <Footer />
-        </Suspense>
+        <div className="min-h-screen flex flex-col">
+          <Suspense fallback={
+            <header className="w-full h-20 bg-[#0B1221]/90 backdrop-blur-sm">
+              <nav className="container-custom h-full">
+                <div className="flex justify-between items-center h-full">
+                  <div className="w-32 h-8 bg-gray-700/30 rounded animate-pulse"></div>
+                  <div className="hidden md:flex space-x-8">
+                    {[...Array(5)].map((_, i) => (
+                      <div key={i} className="w-16 h-6 bg-gray-700/30 rounded animate-pulse"></div>
+                    ))}
+                  </div>
+                  <div className="md:hidden">
+                    <div className="w-8 h-8 bg-gray-700/30 rounded animate-pulse"></div>
+                  </div>
+                </div>
+              </nav>
+            </header>
+          }>
+            <Navigation />
+          </Suspense>
+          <main className="flex-grow">{children}</main>
+          <Suspense fallback={null}>
+            <Footer />
+          </Suspense>
+        </div>
         
         {/* WhatsApp Button */}
         <div className="fixed bottom-6 right-6 flex items-center z-50 group">
@@ -117,6 +136,7 @@ export default function RootLayout({ children }) {
             </div>
           </a>
         </div>
+        <Analytics />
       </body>
     </html>
   )

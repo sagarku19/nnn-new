@@ -23,7 +23,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-300">
-              Your trusted partner for premium laundry services. Making life easier, one garment at a time.
+              Your trusted partner for premium laundry services. Making life easier.
             </p>
             
             {/* Social Media Links */}

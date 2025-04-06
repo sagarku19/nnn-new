@@ -50,7 +50,7 @@ export default function Navigation() {
             >
               <motion.span 
                 whileHover={{ scale: 1.05 }}
-                className="text-2xl font-lora font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent bg-size-200 group-hover:bg-pos-100 transition-all duration-500"
+                className="text-3xl md:text-4xl font-lora font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent bg-size-200 group-hover:bg-pos-100 transition-all duration-500"
               >
                 NeatnNext
               </motion.span>

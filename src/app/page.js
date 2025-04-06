@@ -101,7 +101,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-start pt-24 md:pt-32">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-indigo-900/50 to-gray-900/70 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-indigo-900/70 to-gray-900/90 backdrop-blur-[1px] z-10"></div>
           <Image
             src="/ln5.jpg"
             alt="Laundry Service"
@@ -113,7 +113,7 @@ export default function Home() {
         
         <div className="container-custom relative z-20">
           <div className="text-center max-w-4xl mx-auto text-white">
-            <div className="relative z-10 max-w-4xl mx-auto space-y-5">
+            <div className="relative z-10 max-w-4xl mx-auto">
               <div className="mb-3">
                 <div className="h-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent mb-4"></div>
                 <h1 className="text-5xl md:text-7xl font-lora font-bold relative">
@@ -124,17 +124,17 @@ export default function Home() {
                 <div className="h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent mt-4"></div>
               </div>
 
-              <p className="text-xl md:text-3xl text-gray-300 font-lora mb-4 transition-colors duration-300 hover:text-indigo-300">
+              <p className="text-xl md:text-3xl text-gray-300 font-lora mb-8 transition-colors duration-300 hover:text-indigo-300">
                 A Laundry Marketplace
               </p>
 
-              <div className="mb-4">
+              <div className="mb-6">
                 <div className="text-white text-2xl animate-bounce">
                   ↓
                 </div>
               </div>
 
-              <div className="inline-block mb-4">
+              <div className="inline-block">
                 <a
                   href="https://wa.me/917972303745?text=Hi"
                   target="_blank"
@@ -148,9 +148,11 @@ export default function Home() {
                 </a>
               </div>
 
-              <p className="text-lg md:text-2xl font-lora text-gray-200 transition-colors duration-300 hover:text-indigo-300">
-                India's First Large-Scale Laundry Marketplace & Aggregator
-              </p>
+              <div className="mt-16 md:mt-20">
+                <p className="text-xl md:text-3xl text-gray-300 font-lora mb-0 transition-colors duration-300 hover:text-indigo-300">
+                  India's First Large-Scale Laundry Marketplace & Aggregator
+                </p>
+              </div>
             </div>
           </div>
         </div>
